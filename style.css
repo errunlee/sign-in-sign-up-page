@@ -1,0 +1,139 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  color:white;
+}
+*{
+  margin:0;
+  padding:0;
+}
+.grid{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.info{
+  background:black;
+  width:40vw;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info h1{
+  color:#37d7d7;
+  font-family:'Times New Roman', serif;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+.info h2{
+  color:#edc5f7;
+  margin-bottom: 10px;
+}
+.info p{
+    color: #f1ea12;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+  
+}
+.btn{
+    padding: 12px 33px;
+    background: #3be7f9;
+    border: 2px solid aqua;
+    border-radius: 20px;
+    font-size: 15px;
+}
+.btn:hover{
+  background:#10ddf4 ;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.loginside{
+  background:orange;
+  width:60vw;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container{
+  height:400px;
+  width:300px;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction:column;
+  background:#ebf9f9;
+  color:black;
+  border-radius: 10px;
+}
+.container h2{
+    color: #358fff;
+    font-family: 'Times New Roman', serif;
+    font-size: 25px;
+    margin: 18px;
+  
+}
+.input{
+  font-size: 20px;
+  color: #973e4e; 
+  margin: 5px 0;
+}
+.container input{
+    padding: 9px;
+    width: 65%;
+    font-size: 15px;
+  border-radius: 15px;
+}
+.container input:focus{
+    outline: none;
+    border: 2px solid #344646;
+}
+.container .btn{
+  margin:15px;
+}
+.imgs{
+  margin:5px;
+}
+.imgs:hover{
+  cursor: pointer;
+}
+
+
+.box{
+  border:3px solid #323229;
+  border-left:0px;
+  border-top:0px;
+  border-radius:30px;
+  width:50px;
+  height:50px;
+  margin:auto;
+  animation:load 1s linear 1;  
+}
+@keyframes load{
+  from{
+   transform:rotate(0deg)
+  }
+  to{
+   transform:rotate(360deg)   
+  }
+}
+@media screen and (max-width:900px){
+  .grid{
+    grid-template-columns: auto;
+  }
+  .info{
+    width:100vw;
+    height:30vh;
+  }
+  .info h1{
+    font-size:30px;
+  }
+  .loginside{
+    width:100vw;
+    height:60vh;
+  }
+}
